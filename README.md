@@ -44,12 +44,14 @@ class Net(nn.Module):
 ![image](https://github.com/amitdoda1983/ERA-S6/assets/37932202/51fdf470-af9a-4dfa-b36c-c5cff441854b)
 
 The concepts explored while coming up with this choice of network are:
-Pyramid style choice of number of kernels or resulting channels
-use of only 3x3 kernels for expansion
-use of 1x1 for channel reduction
-Max pool layers to reduce the channel size.
-No padding, no stride.
-Small dropout to generalize.
-Batch Normalailzation to converge faster.
-Smaller batch size = 16 to have relatively more weight updates in an epoch
+
+1. Pyramid style choice of number of kernels or resulting channels
+2. use of only 3x3 kernels for expansion
+3. use of 1x1 for channel reduction
+4. Max pool layers to reduce the channel size.
+5. No padding, no stride.
+6. Small dropout to generalize.
+7. Batch Normalailzation to converge faster.
+8. Smaller batch size = 16 to have relatively more weight updates in an epoch
+9. 
 
