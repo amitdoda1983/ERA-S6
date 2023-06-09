@@ -10,7 +10,7 @@ class Net(nn.Module):
 
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 8, 3) #input -? OUtput? RF
+        self.conv1 = nn.Conv2d(1, 8, 3)
         self.conv1_bn=nn.BatchNorm2d(8)
         self.conv2 = nn.Conv2d(8, 16, 3)
         self.conv2_bn=nn.BatchNorm2d(16)
@@ -52,9 +52,10 @@ The concepts explored while coming up with this choice of network are:
 2. use of only 3x3 kernels for expansion
 3. use of 1x1 for channel reduction
 4. Max pool layers to reduce the channel size.
-5. No padding, no stride.
-6. Small dropout to generalize.
-7. Batch Normalailzation to converge faster.
-8. Smaller batch size = 16 to have relatively more weight updates in an epoch
+5. Average pooling layer in the last to reduce the channel to single value.
+6. No padding, no stride.
+7. Small dropout to generalize.
+8. Batch Normalailzation to converge faster.
+9. Smaller batch size = 16 to have relatively more weight updates in an epoch
 
-
+# Results: Acheived 99.48 % test accuracy in 17th Epoch (model parameters : 13706)
