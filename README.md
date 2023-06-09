@@ -5,7 +5,9 @@
 
 Below is the updated model network :
 
+
 class Net(nn.Module):
+
     def __init__(self):
         super(Net, self).__init__()
         self.conv1 = nn.Conv2d(1, 8, 3) #input -? OUtput? RF
