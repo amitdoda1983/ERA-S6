@@ -43,6 +43,8 @@ class Net(nn.Module):
 
 ![image](https://github.com/amitdoda1983/ERA-S6/assets/37932202/51fdf470-af9a-4dfa-b36c-c5cff441854b)
 
+### We have a total of 13,706 parameters
+
 The concepts explored while coming up with this choice of network are:
 
 1. Pyramid style choice of number of kernels or resulting channels
@@ -53,5 +55,5 @@ The concepts explored while coming up with this choice of network are:
 6. Small dropout to generalize.
 7. Batch Normalailzation to converge faster.
 8. Smaller batch size = 16 to have relatively more weight updates in an epoch
-9. 
+
 
